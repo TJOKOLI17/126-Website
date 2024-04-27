@@ -4,4 +4,10 @@ body{
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    display: grid;
+}
+
+header{
+    width: 100%;
+    background-color: aqua;
 }
