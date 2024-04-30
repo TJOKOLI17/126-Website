@@ -8,7 +8,14 @@ body{
     height:100vh;
 }
 
-header{
-    width: 100%;
-    background-color: aqua;
+.spinning-container{
+    width: 200px;
+    height: 200px;
+    color:white;
+    background-color: red;
 }
+
+p{
+    color: white;
+}
+
