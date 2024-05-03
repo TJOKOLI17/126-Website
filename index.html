@@ -6,17 +6,59 @@
     <title>UNCoded</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Nanum+Gothic+Coding&family=Rubik+Glitch+Pop&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Lobster&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Nanum+Gothic+Coding&family=Rubik+Glitch+Pop&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/responsive-nav.js-master/responsive-nav.css">
+    <script src="/responsive-nav.js-master/responsive-nav.js"></script>
 
 </head>
 <body> <!-- EVERYTHING we want the viewer to see is enclosed in the body tags -->
-    <div class="spinning-container">
-        <p>This is my final project</p>
-        <div class="spinning-image"></div>
-      </div>
+    <header><p class="page-title">UNCoded</p></header>
+    <nav class="nav-collapse">
+        <ul>
+            <li class="home"><a href="index.html" class="link">Home</a></li>
+            <li class="apply"><a href="apply.html" class="link">Apply</a></li>
+        </ul>
+        </nav>
+    <div class="logo-spin">
+            <img class="logo-img" src="../img/UNCoded_logo_2-removebg-preview.png" alt="logo-div">
+    </div>
+
+    <div class="info-div">
+        <p class="info">Welcome, incoming CS majors! <br>
+            <br> UNCoded is proud to offer you an insight 
+            <br>into what life is like as a Computer Science major at UNC.
+            <br> Learn about our different clubs, how to apply to the major, 
+            <br>and what it means to be a part of our community.
+        </p>
+    </div>
+    <div class="news-and-events">
+        <div class="news">
+            <p>news</p>
+            <p class="info">
+                1. App Team Carolina Applications for Spring 24 close on 12/1<br><br>
+                2. <br><br>
+                3. <br><br>
+                4.  <br><br>
+                5. <br><br>
+            </p>
+            
+        </div>
+        <div class="events">
+            <p>events</p>
+            <p class="info">
+                10/25 - 27: HackNC<br><br>
+                11/17: Black in Technology EoY Party<br><br>
+                11/30: App Team Carolina Club Fair<br><br>
+                12/09: Confetti and Christmas Code <br><br>
+                12/09: Confetti and Christmas Code <br><br>
+        </div>
+    </div>
+    <footer> <p class="footer-text">Copyright &copy; 2024 UNCoded. All rights reserved.</p></footer>
+    
+
+    <script>
+    var nav = responsiveNav(".nav-collapse");
+    </script>
 </body>
 </html> <!-- html closing tag -->
 
