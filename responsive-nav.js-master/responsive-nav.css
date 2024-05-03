@@ -292,7 +292,7 @@ footer{
     grid-row: 3/4;
     flex-direction: row;
     gap: 1rem;
-    margin-bottom: 1px;
+    margin-bottom: 50px;
     /* padding: 200px 0px; */
   
   }
