@@ -1,5 +1,7 @@
 /*! responsive-nav.js 1.0.39 by @arielsalminen */
 
+/*___________INDEX.HTML____________*/
+
 /*___________MOBILE VIEW____________*/
 body{
     background-image: url("../img/nasa-view-of-earth.jpg");
@@ -97,6 +99,7 @@ body{
   .link{
     color:white;
     text-decoration: none;
+    font-family: "Nanum Gothic Coding", monospace;
   
   }
   
@@ -112,7 +115,7 @@ body{
     padding-left: 30px;
     grid-column: 1/4;
     grid-row: 1/2;
-    .page-title{
+    .uncoded-title{
       color: white;
       font-family: "Bree Serif", serif;
       font-size: 20px;
@@ -161,10 +164,14 @@ body{
       font-size: 20px;
       font-weight: bold;
       text-shadow: 3px 2px 4px rgba(0, 0, 0, 0.5);
+      font-family: "Nanum Gothic Coding", monospace;
     }
-  
-    
   }
+
+  strong{
+    font-size: 18px;
+    font-family: "Nanum Gothic Coding", monospace;
+}
   
   .news-and-events{
     grid-column: 1/5;
@@ -176,7 +183,6 @@ body{
     justify-content: start;
     align-items: center;
     margin-bottom: 70px;
-    /* background-color: aqua; */
   
   }
   
@@ -188,8 +194,8 @@ body{
     border-radius: 5px;
   
     .news-text{
-      /* color: #351678; */
       margin: 0px 30px;
+      font-family: "Nanum Gothic Coding", monospace;
     }
   }
   .events{
@@ -199,8 +205,8 @@ body{
     text-align: center;
     border-radius: 5px;
     .events-text{
-      /* color: white; */
       margin: 0px 30px;
+      font-family: "Nanum Gothic Coding", monospace;
     }
   }
   
@@ -211,6 +217,7 @@ body{
     .footer-text{
       color: white;
       text-align: center;
+      font-family: "Nanum Gothic Coding", monospace;
     }
   }
   
@@ -247,10 +254,10 @@ body{
     }
   
     .nav-collapse .home{
-      margin-right: 80px;
+      margin-right: 40px;
     }
     .nav-collapse .apply{
-      margin-right: 70px;
+      margin-right: 40px;
     }
   
     .link{
@@ -341,6 +348,20 @@ body{
   
   }
   
-  *{
+
+  /* *{
     font-family: "Nanum Gothic Coding", monospace;
+  } */
+  /*___________________________________*/
+  /*___________________________________*/
+  /*___________________________________*/
+  /*___________________________________*/
+
+  /*___________APPLY.HTML____________*/
+
+  .apply-title{
+    color: white;
+    font-family: "Bree Serif", serif;
+    font-size: 20px;
+    letter-spacing: 3px;
   }
