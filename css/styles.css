@@ -119,6 +119,7 @@ body{
       letter-spacing: 3px;
     }
   }
+
   .logo-spin{
     /* background-color: red; */
     justify-self: center;
@@ -148,7 +149,8 @@ body{
     grid-column: 1/5;
     grid-row: 4/5;
     
-    margin-bottom: 100px;
+    
+    margin: 0px 20px 100px 20px;
     
     .info{
       color: white;
