@@ -8,7 +8,7 @@ body{
     background-position: center;
     background-attachment: fixed;
     display: grid;
-    grid-template-columns: /*1*/ 1fr /*2*/ 20fr /*3*/ 20fr /*4*/ 1fr/*5*/;
+    grid-template-columns: /*1*/ 1fr /*2*/ 20fr /*3*/ 6fr /*4*/ 1fr/*5*/;
     grid-template-rows: /*1*/ auto /*2*/ auto /*3*/auto /*4*/ auto /*5*/ auto /*6*/ auto /*7*/;
     margin: 0;
   }
@@ -123,9 +123,12 @@ body{
   .logo-spin{
     /* background-color: red; */
     justify-self: center;
+    align-self: center;
+    display: flex;
+    align-items: center;
     /* margin: auto; */
     width: 300px;
-    grid-column: 2/4;
+    grid-column: 1/5;
     grid-row: 3/4;
     animation: spin 0.7s linear forwards;
   }
@@ -163,7 +166,6 @@ body{
     
   }
   
-  
   .news-and-events{
     grid-column: 1/5;
     grid-row: 5/6;
@@ -177,6 +179,7 @@ body{
     /* background-color: aqua; */
   
   }
+  
   .news{
     width: 75%;
     height: auto;
