@@ -1,0 +1,225 @@
+header {
+background-color: #4B9CD3;
+margin: 0% 0% 2% 0%;
+padding: 0%;
+display: flex;
+}
+h1 {
+    margin: 0;
+    padding: 5%;
+}
+html, body {
+    margin: 0;
+}
+footer {
+    background-color: #4B9CD3;
+    margin: 5% 0 0 0;
+    display: flex;
+    flex-direction: row;
+    align-content: baseline;
+}
+.footer-txt {
+    font-size: 20px;
+}
+h3 {
+    margin: 0%;
+    padding: 4%;
+    position: relative;
+}
+
+.roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.roboto-mono {
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+.montserrat {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+.images-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.img-1 {
+    grid-row: 1/2;
+}
+.img-2 {
+    grid-row: 2/3;
+}
+.img-3 {
+    grid-row: 3/4;
+}
+.img-4 {   
+    grid-row: 4/5;
+}
+.img-5 {
+    grid-row: 5/6;
+}
+.img-6 {
+    grid-row: 6/7;
+}
+.img-7 {
+    grid-row: 7/8;
+}
+.img-8 {
+    grid-row: 8/9;
+}
+.gallery-img {
+    width: 90%;
+    height: auto;
+    margin: 0% 5%;
+border-radius: 10px;
+}
+.abt-img {
+    width: 90%;
+    height: auto;
+    border-radius: 8px;
+}
+.abt-img-container {
+    margin: 0% 5%;
+    text-align: center;
+}
+.abt-txt-container {
+    margin: 0% 5%;
+    text-align: center;
+}
+.mission-statement {
+    margin: 1% 5%;
+    background-color: #B5B0F3;
+    border-radius: 9px;
+    text-align: center;
+    padding: 0px 2%;
+margin-bottom: 5%;
+}
+.sample-plan-button {
+    background-color:#4B9CD3;
+    color:white;
+    padding: 8px; 
+    text-decoration:none;
+    border-radius: 5px;
+    font-size: 20px;
+
+}
+.sample-plan-button:hover ,.sample-plan-button:focus {
+    background-color: #69DC95;
+    text-decoration: underline;
+}
+.about-page {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+.about-title {
+    text-align: center;
+}
+.bttn-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.gallery-title {
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+.images-grid {
+display: flex;
+flex-wrap: wrap;
+flex-direction: row;
+
+}
+
+.img-1 {
+grid-column: 1/2;
+grid-row: 1/2;
+object-fit: cover;
+width: 33%;
+height: auto;
+}
+.img-2 {
+    grid-column: 2/3;
+grid-row: 1/2;
+object-fit: cover;
+width: 33%;
+height: auto;
+}
+.img-3 {
+    grid-column: 1/2;
+grid-row: 2/3;
+object-fit: cover;
+width: 33%;
+height: auto;
+}
+.img-4 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    object-fit: cover;
+    width: 33%;
+    height: auto;
+}
+.img-5 {
+grid-column: 1/2;
+grid-row: 3/4;
+object-fit: cover;
+width: 33%;
+height: auto;
+}
+.img-6 {
+    grid-column: 2/3;
+    grid-row: 3/4;
+    object-fit: cover;
+    width: 33%;
+    height: auto;
+}
+.img-7 {
+    grid-column: 1/2;
+    grid-row: 4/5;
+    object-fit: cover;
+    width: 33%;
+    height: auto;
+}
+.img-8 {
+    grid-column: 2/3;
+    grid-row: 4/5;
+    object-fit: cover;
+    width: 33%;
+    height: auto;
+}
+h1 {
+    padding: 2%;
+    font-size: 24px;
+}
+h3 {
+    padding: 2%;
+}
+.about-title {
+    font-size: 35px;
+    text-align: center;
+}
+.about-page {
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.abt-txt-container {
+    width: 40%;
+    height: auto;
+    font-size: 20px;
+}
+.abt-img-container {
+    width: 40%;
+}
+.mission-statement {
+    font-size: 20px;
+}
+
+
+}
