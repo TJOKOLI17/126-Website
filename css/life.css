@@ -1,0 +1,264 @@
+header {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 30px;
+  font-size: 30px;;
+  background-color: #4B9CD3;
+  margin-bottom: 40px;
+  
+}
+
+body{
+  background-image: url(/img/nasa-view-of-earth.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.title {
+padding-top: 30px;
+}
+
+
+.navi {
+  float: right;
+  padding-top: 30px;
+  font-size: 20px;
+}
+/* nav hamburger styling */
+
+a:active,
+a:hover {
+  outline: 0;
+}
+
+.menu-item:hover {
+  text-decoration: underline;
+  text-decoration-color: white;
+}
+
+@font-face {
+  font-family: "responsivenav";
+  src: url("../icons/responsivenav.eot");
+  src: url("../icons/responsivenav.eot?#iefix") format("embedded-opentype"),
+    url("../icons/responsivenav.ttf") format("truetype"),
+    url("../icons/responsivenav.woff") format("woff"),
+    url("../icons/responsivenav.svg#responsivenav") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.nav-toggle {
+  text-decoration: none;
+  text-indent: -300px;
+  position: relative;
+  overflow: hidden;
+  width: 60px;
+  height: 55px;
+  float: right;
+}
+
+.nav-toggle:before {
+  color: white; 
+  font: normal 28px/55px "responsivenav"; 
+  text-align: center;
+  position: absolute;
+  content: "\2261"; /* hamburger icon */
+  text-indent: 0;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+
+.nav-toggle.active:before {
+  font-size: 24px;
+  content: "\78"; /* X/close icon */
+}
+
+.nav-collapse ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.nav-collapse li {
+  display: block;
+}
+
+.js .nav-collapse {
+  max-height: 0;
+  position: absolute;
+  display: block;
+  overflow: hidden;
+}
+
+.nav-collapse.opened {
+  max-height: 9999px;
+}
+.nav-collapse,
+.nav-collapse * {
+  box-sizing: border-box;
+}
+
+.nav-collapse,
+.nav-collapse ul {
+  list-style: none;
+  width: 100%;
+  display: flex;
+  justify-content: end;
+}
+
+.nav-collapse a {
+  text-decoration: none;
+  padding: 0.7em 1em;
+  color: white;
+  width: 100%;
+  display: block;
+}
+
+.nav-collapse ul ul a {
+  padding-left: 2em;
+}
+
+@media screen and (min-width: 850px) {
+  .nav-collapse ul {
+  flex-direction: row;
+  align-items: flex-end;
+  font-size: 15px;;
+  justify-content: space-evenly;
+}
+  
+  .nav-collapse li {
+    width: auto;
+  }
+
+  .nav-collapse a {
+    padding: 1.02em 2em;
+    text-align: center;
+    border-top: 0;
+    margin: 0;
+  }
+
+  .nav-collapse ul ul a {
+    display: none;
+  }
+
+  .nav-collapse.closed {
+    max-height: none;
+  }
+  .nav-toggle {
+    display: none;
+  }
+}
+
+/* footer styling */
+footer {
+  display: flex;
+  justify-content: center;
+  justify-self: end;
+  background-color: #4B9CD3;
+  padding-top: 25px;
+  color: white;
+  font: 16px;
+}
+
+.pics img {
+  width: 100%; 
+  height: auto; 
+}
+
+/* club div styling */
+.clubs {
+  display: flex;
+  background-color: white;
+  color:#4B9CD3;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+h1{
+  display: flex;
+  justify-content: space-around;
+  color: white;
+  background-color: #4B9CD3;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.highlight {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 50px;
+  width: 91%;
+  display: flex;
+  flex-direction: row;
+  height: auto;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: white;
+
+}
+.highimg img {
+  padding-top: 20px;
+  width: 100%; 
+  height: auto; 
+}
+
+.highdesc {
+  display: flex;
+  color:#4B9CD3;
+  width: 100%;
+  margin-left: 20px;
+  height: auto;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-right: 1px;
+}
+
+
+/* Add a media query for desktop viewports */
+@media screen and (min-width: 850px) {
+  /* Ensure .mid divs are displayed as flex containers */
+  .mid {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  /* Arrange the .pics and .clubs divs horizontally */
+  .pics,
+  .clubs {
+    flex: 1;
+    width: 100%; 
+    margin-right: 20px;
+  }
+
+  .pics,
+  .clubs {
+    height: auto;
+    width: auto;
+  }
+
+
+  /* Ensure .highlight divs are below .pics and .clubs */
+  .highlight {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-right: 10px;
+    margin-left: 20px;
+  }
+
+  /* Set width for .highlight children to maintain layout */
+  .highimg,
+  .highdesc {
+    width: 40%;
+    margin-bottom: 20px;
+    font-size: 20px;;
+  }
+}
