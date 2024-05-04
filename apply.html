@@ -11,7 +11,7 @@
     <script src="/responsive-nav.js-master/responsive-nav.js"></script>
 
 </head>
-<body> <!-- EVERYTHING we want the viewer to see is enclosed in the body tags -->
+<body class="apply-body"> <!-- EVERYTHING we want the viewer to see is enclosed in the body tags -->
     <header class="apply-title"><p>Apply</p></header>
     <nav class="nav-collapse">
         <ul>
@@ -20,8 +20,36 @@
         </ul>
     </nav>
     
-
+    <main class="content">
+        <div class="application-process-div">
+            <h2>Application Process</h2>
+            
+            <p class="about-major">Prospective students are welcome to<br> 
+                apply after completing all prerequisites.<br><br>
+                Applications open February 1st <br><br>
+                Accepted students will be enrolled in COMP 211 and COMP 301<br> 
+                to finish introductory courses before being allowed<br> 
+                to enroll in upper division classes.
+            </p>
+            
+        </div>
+        <div class="mailing-list">
+            <h2>Join our mailing list!</h2>
+            <form>
+                    <label for="name">Name:<br></label><br>
+                    <input class="box" type="text" id="name" name="name" required>
+                    <br> <br><br>
+                    <label for="email">Email:<br></label>
+                    <br>
+                    <input class="box" type="email" id="email" name="email" required>
+                    <br> <br><br>
+                <button class="submit" type="submit">Submit</button>
+              </form>
+            
+        </div>
+    </main>
     
+    <footer class="apply-footer"> <p class="footer-text">Copyright &copy; 2024 UNCoded. All rights reserved.</p></footer>
 
     <script>
     var nav = responsiveNav(".nav-collapse");
