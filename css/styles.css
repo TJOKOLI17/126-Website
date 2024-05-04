@@ -481,7 +481,7 @@ label{
 /*___________DESKTOP VIEW____________*/
 @media screen and (min-width: 810px) {
     .apply-body{
-      display: flex
+      display: grid;
       grid-template-columns: /*1*/ 5fr /*2*/ 5fr /*3*/;
       grid-template-rows: /*1*/ 50px /*2*/ 10fr /*3*/ 6fr/*4*/ 0fr /*5*/;
     }
