@@ -5,7 +5,7 @@ body{
   background-position: center;
   background-attachment: fixed;
   margin: 0;
-  }
+}
 
 /* header */
 header {
@@ -270,12 +270,12 @@ color: #69DC95;
   .plans {
     display: flex;
     flex-direction: row;
-    margin-top: 90px;
+    margin-top: 200px;
     
   }
 
   footer{
-    margin-top: 90px;
+    margin-top: 105px;
   }
 
 
