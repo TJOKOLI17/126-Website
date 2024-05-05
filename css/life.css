@@ -209,6 +209,8 @@ footer{
   text-align: center;
   margin: 0;
   padding: 0;
+  margin-bottom: 5px;
+  text-decoration: underline;
 }
 
 ul {
@@ -336,9 +338,16 @@ h2{
     margin-bottom: 15px;
     height: 18rem;
     width: 40%;
-
   }
 
+  .club-list{
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
   /* Arrange the .pics and .clubs divs horizontally */
   
 
