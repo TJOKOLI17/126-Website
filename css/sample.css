@@ -1,3 +1,12 @@
+body{
+  background-image: url("../img/nasa-view-of-earth.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  margin: 0;
+  }
+
 /* header */
 header {
   color: black;
@@ -273,10 +282,5 @@ color: #69DC95;
 }
 
 html, body{
-background-image: url("../img/nasa-view-of-earth.jpg");
-background-repeat: no-repeat;
-background-size: cover;
-background-position: center;
-background-attachment: fixed;
 margin: 0;
 }
