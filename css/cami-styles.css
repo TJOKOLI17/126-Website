@@ -41,17 +41,6 @@ header {
       position: relative;
   }
   
-  .roboto-regular {
-      font-family: "Roboto", sans-serif;
-      font-weight: 400;
-      font-style: normal;
-  }
-  .roboto-mono {
-      font-family: "Roboto Mono", monospace;
-      font-optical-sizing: auto;
-      font-weight: 400;
-      font-style: normal;
-  }
   .montserrat {
       font-family: "Montserrat", sans-serif;
       font-optical-sizing: auto;
@@ -315,11 +304,6 @@ header {
       width: 33%;
       height: auto;
   }
-  h1 {
-      padding: 2%;
-      font-size: 24px;
-      font-family: "Bree Serif", serif;
-  }
   h3 {
       padding: 2%;
       font-family: "Bree Serif", serif;
@@ -343,6 +327,13 @@ header {
   }
   .mission-statement {
       font-size: 20px;
+  }
+
+  h1 {
+    padding: 2%;
+    font-size: 24px;
+    font-family: "Bree Serif", serif;
+  
   }
   .nav-collapse ul {
       flex-direction: row;

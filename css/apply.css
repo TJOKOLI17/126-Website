@@ -1,7 +1,7 @@
 /*___________APPLY.HTML____________*/
 
   
-header {
+/* header {
 grid-column: 1/5;
 color: black;
 display: flex;
@@ -22,8 +22,10 @@ overflow: hidden;
 .nav-collapse{
     align-self: center;
     /* background-color: red; */
-    grid-row: 2/3;
-}
+    /* grid-row: 2/3;
+} */ 
+
+
 
   .content{
     grid-row: 3/4;
@@ -136,11 +138,6 @@ label{
 
 /*___________DESKTOP VIEW____________*/
 @media screen and (min-width: 850px) {
-    .apply-body{
-      display: grid;
-      grid-template-columns: /*1*/ 5fr /*2*/ 5fr /*3*/;
-      grid-template-rows: /*1*/ 50px /*2*/ 10fr /*3*/ 1fr/*4*/ 0fr /*5*/;
-    }
 
     .content{
         grid-row: 2/3;
