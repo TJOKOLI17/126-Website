@@ -185,13 +185,15 @@ footer{
   margin-bottom: 20px;
   margin: 15px;
   padding: 10px 40px;
-  background: white;
   border-radius: 10px;
   box-shadow: 1 3px 10px rgba(152, 201, 215, 0.887);
   padding-block: 20px;
   background-color: #4B9CD3;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .club-list{
@@ -199,9 +201,18 @@ footer{
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.club-item{
+  text-align: center;
+  margin: 0;
+  padding: 0;
 }
 
 ul {
+  text-align: center;
   font-size: 20px;
   font-family: "Nanum Gothic Coding", monospace;
 }
@@ -218,6 +229,7 @@ h2{
   margin-right: 15px;
   align-items: center;
   width: 100%;
+  text-align: center;
 }
 
 .highlight {
@@ -233,6 +245,8 @@ h2{
   border-radius: 10px;
   box-shadow: 1 3px 10px rgba(152, 201, 215, 0.887);
   padding-block: 20px;
+  margin-right: auto;
+    margin-left: auto;
 
 }
 .highimg img {
@@ -301,22 +315,27 @@ h2{
   .mid {
     flex-direction: row;
     display: flex;
-    justify-content: space-between;
     justify-content: space-around;
   }
 
   .pics {
     display: flex;
-    width: 100%; 
+    width: 40%; 
     height: 20.5rem; 
     margin: 2px;
+    overflow: hidden;
+    /* margin-left:50px; */
+  }
+
+  img{
+    border-radius: 5px;
   }
 
   .clubs {
     margin-top: 21px;
     margin-bottom: 15px;
     height: 18rem;
-    width: 100%;
+    width: 40%;
 
   }
 
@@ -331,9 +350,9 @@ h2{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    margin-right: 20px;
-    margin-left: 22px;
-    width: 93.5%;
+    margin-right: auto;
+    margin-left: auto;
+    width: 95%;
   }
 
   /* Set width for .highlight children to maintain layout */
