@@ -229,7 +229,7 @@ color: #69DC95;
 }
 
 
-@media screen and (min-width: 850px) {
+@media screen and (min-width: 700px) {
   .title {
     padding: 2%;
     font-size: 24px;

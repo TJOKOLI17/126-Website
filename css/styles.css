@@ -280,7 +280,7 @@ body{
   
   
   /*___________DESKTOP VIEW____________*/
-  @media screen and (min-width: 850px) {
+  @media screen and (min-width: 700px) {
     .title {
         padding: 2%;
         margin-top: 20px;
@@ -328,7 +328,7 @@ body{
     .logo-spin{
       width: 100%;
       align-self: center;
-      min-width: 400px;
+      min-width: 300px;
       
     }
   
@@ -338,7 +338,7 @@ body{
       margin-top: 60px;
       margin-right: 50px;
       margin-bottom: 0;
-      min-width: 400px;
+      min-width: 300px;
       padding: 30px 40px;
       .info{
         font-size: 20px;

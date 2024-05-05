@@ -275,7 +275,7 @@ h2{
 }
 
 /* Add a media query for desktop viewports */
-@media screen and (min-width: 850px) {
+@media screen and (min-width: 700px) {
   /* Ensure .mid divs are displayed as flex containers */
   .title {
     padding: 2%;

@@ -118,7 +118,7 @@ grid-row: 4/5;
 
 
 /*___________DESKTOP VIEW____________*/
-@media screen and (min-width: 850px) {
+@media screen and (min-width: 700px) {
 
     .csxl-div{
         width: 95%;

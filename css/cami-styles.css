@@ -291,7 +291,7 @@ header {
     padding-left: 2em;
   }
   
-  @media screen and (min-width: 850px) {
+  @media screen and (min-width: 700px) {
   .images-grid {
   display: flex;
   flex-wrap: wrap;
