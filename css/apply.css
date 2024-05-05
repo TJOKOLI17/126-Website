@@ -9,7 +9,7 @@
 
 .csxl-img{
     width: 100%;
-    color: white;
+    
 }
 
 .content{
@@ -46,7 +46,7 @@ width: 100%;
 margin-left: 70px;
 margin-right: 70px;
 text-align: center;
-color: white;
+
 font-size: 17px;
 font-family: "Nanum Gothic Coding", monospace;
 }
@@ -65,7 +65,6 @@ width: 90%;
 
 form{
 width: 70%;
-/* background-color: coral; */
 margin: 30px 200px;
 display: flex;
 flex-direction: column;
@@ -75,7 +74,7 @@ align-items: center;
 
 
 label{
-color: white;
+
 font-size: 18px;
 align-self: flex-start;
 font-family: "Nanum Gothic Coding", monospace;
@@ -84,7 +83,7 @@ font-family: "Nanum Gothic Coding", monospace;
 .box{
 width: 100%;
 border-radius: 5px;
-padding: 8px;
+height: 30px;
 transition-property: border-color, background-color;
 transition-duration: 0.3s, 0.1s; 
 transition-timing-function: ease;
@@ -101,14 +100,14 @@ background-color: #7551C0;
 color: #69DC95;
 font-weight: 700px;
 width: 200px;
-padding: 15px 0px;
+height: 45px;
 border-radius: 10px;
 font-family:Verdana, Geneva, Tahoma, sans-serif;
 font-size: 18px;
 transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.submit:hover{
+.submit:hover, .submit:focus{
 background-color:#69DC95;
 color: #7551C0;
 }
@@ -117,58 +116,38 @@ color: #7551C0;
 grid-row: 4/5;
 }
 
-footer{
-background-color: #4B9CD3;
-/* padding-left: 100%; */
-align-self: center;
-text-align: center;
-.footer-text{
-    color: white;
-    text-align: center;
-    font-family: "Nanum Gothic Coding", monospace;
-}
-}
-
 
 /*___________DESKTOP VIEW____________*/
 @media screen and (min-width: 850px) {
 
-.csxl-div{
-    width: 95%;
-    margin: 0 auto;
-    border-radius: 5px;
-    overflow: hidden;
-}
+    .csxl-div{
+        width: 95%;
+        margin: 0 auto;
+        border-radius: 5px;
+        overflow: hidden;
+    }
 
-.content{
-    grid-row: 2/3;
-    flex-direction: row;
-    align-items: stretch;
-}
-
-
-.mailing-list{
-    min-width: 40%;
-    padding: 15px;
-    margin-top: 200px;
-    /* margin-top: 230px; */
-}
-
-.application-process-div{
-    min-width: 40%;
-    /* padding: 15px; */
-    /* min-height: 455px; */
-    margin-top: 200px;
-    justify-items: start;
-
-}
-
-footer{
-    margin-top: 20px;
-    grid-column: 1/5;
-}
+    .content{
+        grid-row: 2/3;
+        flex-direction: row;
+        align-items: stretch;
+    }
 
 
+    .mailing-list{
+        min-width: 40%;
+        padding: 15px;
+        margin-top: 200px;
+        /* margin-top: 230px; */
+    }
 
+    .application-process-div{
+        min-width: 40%;
+        /* padding: 15px; */
+        /* min-height: 455px; */
+        margin-top: 200px;
+        justify-items: start;
+
+    }
 
 }

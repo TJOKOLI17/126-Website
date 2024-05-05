@@ -11,7 +11,17 @@ header {
     justify-content: space-between;
     background-color: #4B9CD3;
     margin-bottom: 40px;
-    
+  }
+  alt {
+    color: white;
+  }
+  body {
+    background-image: url("../img/nasa-view-of-earth.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    overflow: scroll;
   }
   .body-font {
     font-family: "Nanum Gothic Coding", monospace;
@@ -24,12 +34,16 @@ header {
   html, body {
       margin: 0;
   }
-  footer {
-      background-color: #4B9CD3;
-      margin: 5% 0 0 0;
-      display: flex;
-      flex-direction: row;
-      align-content: baseline;
+
+  footer{
+    background-color: #4B9CD3;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    .footer-text{
+      text-align: center;
+      font-family: "Nanum Gothic Coding", monospace;
+    }
   }
   .footer-txt {
       font-size: 20px;
@@ -52,35 +66,44 @@ header {
   }
   .img-1 {
       grid-row: 1/2;
+      margin-bottom: 1.5%;
   }
   .img-2 {
       grid-row: 2/3;
+      margin-bottom: 1.5%;
   }
   .img-3 {
       grid-row: 3/4;
+      margin-bottom: 1.5%;
   }
   .img-4 {   
       grid-row: 4/5;
+      margin-bottom: 1.5%;
   }
   .img-5 {
       grid-row: 5/6;
+      margin-bottom: 1.5%;
   }
   .img-6 {
       grid-row: 6/7;
+      margin-bottom: 1.5%;
   }
   .img-7 {
       grid-row: 7/8;
+      margin-bottom: 1.5%;
   }
   .img-8 {
       grid-row: 8/9;
+      margin-bottom: 1.5%;
   }
   .gallery-img {
-    width: 400px;
-    height: 400px;
+    width: 90%;
+    height: 100%;
     object-fit: cover;
     margin: 0% 5%;
   border-radius: 10px;
   }
+
   .abt-img {
       width: 90%;
       height: auto;
@@ -89,32 +112,49 @@ header {
   .abt-img-container {
       margin: 0% 5%;
       text-align: center;
+      margin-top: 5%;
   }
+
   .abt-txt-container {
       margin: 0% 5%;
+      border-radius: 5px;
+      font-family: "Nanum Gothic Coding", monospace;;
+      margin-bottom: 20px;
       text-align: center;
+      background-color: #69DC95;
+  }
+
+  .abt-txt-p{
+    margin: 10px 20px;
   }
   .mission-statement {
       margin: 1% 5%;
+      font-family: "Nanum Gothic Coding", monospace;
       background-color: #B5B0F3;
       border-radius: 9px;
       text-align: center;
       padding: 0px 2%;
   margin-bottom: 5%;
+  margin-top: 5%;
   }
   .sample-plan-button {
       background-color:#4B9CD3;
       color:black;
-      padding: 8px; 
+      padding: 8px 40px; 
       text-decoration:none;
       border-radius: 5px;
       font-size: 20px;
-  
-  }
-  .sample-plan-button:hover ,.sample-plan-button:focus {
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+    
+    .sample-plan-button:hover ,.sample-plan-button:focus{
+    background-color:#69DC95;
+    color: #7551C0;
+    }
+  /* .sample-plan-button:hover ,.sample-plan-button:focus {
       background-color: #69DC95;
       text-decoration: underline;
-  }
+  } */
   .about-page {
       display: flex;
       flex-direction: column;
@@ -122,6 +162,7 @@ header {
       align-items: center;
   }
   .about-title {
+    color: white;
       text-align: center;
   }
   .bttn-container {
@@ -130,6 +171,7 @@ header {
       width: 100%;
   }
   .gallery-title {
+    color: white;
       text-align: center;
       font-size: 40px;
       padding-top: 0%;
@@ -249,7 +291,7 @@ header {
     padding-left: 2em;
   }
   
-  @media screen and (min-width: 850px) {
+  @media screen and (min-width: 768px) {
   .images-grid {
   display: flex;
   flex-wrap: wrap;
@@ -261,49 +303,58 @@ header {
   }
   
   .img-1 {
-  object-fit: cover;
-  width: 33%;
-  height: auto;
-  margin-bottom: 25px;
-  }
-  .img-2 {
-  object-fit: cover;
-  width: 33%;
-  height: auto;
-  margin-bottom: 25px;
-  }
-  .img-3 {
-  object-fit: cover;
-  width: 33%;
-  height: auto;
-  margin-bottom: 25px;
-  }
-  .img-4 {
+    object-fit: cover;
+    width: 33%;
+    height: auto;
+    margin-bottom: 25px;
+    }
+    .img-2 {
+    object-fit: cover;
+    width: 33%;
+    height: auto;
+    margin-bottom: 25px;
+    }
+    .img-3 {
+    object-fit: cover;
+    width: 33%;
+    height: auto;
+    margin-bottom: 25px;
+    }
+    .img-4 {
+        object-fit: cover;
+        width: 33%;
+        height: auto;
+        margin-bottom: 25px;
+    }
+    .img-5 {
+    object-fit: contain;
+    width: 33%;
+    height: auto;
+    margin-bottom: 25px;
+    }
+    .img-6 {
+        object-fit: scale-down;
+        width: 33%;
+        height: auto;
+        margin-bottom: 25px;
+    }
+    .img-7 {
+        object-fit: cover;
+        width: 33%;
+        height: auto;
+  
+    }
+    .img-8 {
+        object-fit: cover;
+        width: 33%;
+        height: auto;
+  
+    }
+    .img-9 {
       object-fit: cover;
       width: 33%;
       height: auto;
-      margin-bottom: 25px;
-  }
-  .img-5 {
-  object-fit: cover;
-  width: 33%;
-  height: auto;
-  margin-bottom: 25px;
-  }
-  .img-6 {
-      object-fit: cover;
-      width: 33%;
-      height: auto;
-  }
-  .img-7 {
-      object-fit: cover;
-      width: 33%;
-      height: auto;
-  }
-  .img-8 {
-      object-fit: cover;
-      width: 33%;
-      height: auto;
+  margin-bottom: 20px;
   }
   h3 {
       padding: 2%;
@@ -318,11 +369,19 @@ header {
       flex-direction: row;
       flex-wrap: wrap;
   }
+  
   .abt-txt-container {
+    margin: 5% 5%;
       width: 40%;
       height: auto;
-      font-size: 20px;
+      min-height: 200px;
+      font-size: 16px;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
   }
+
   .abt-img-container {
       width: 40%;
   }
@@ -364,6 +423,8 @@ header {
       .nav-toggle {
         display: none;
       }
-  
+      .gallery-img {
+        margin-right: 0%;
+      }
   
   }

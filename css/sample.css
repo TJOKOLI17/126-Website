@@ -1,4 +1,3 @@
-
 /* header */
 header {
   color: black;
@@ -9,46 +8,55 @@ header {
   margin-bottom: 40px;
 }
 
-.title {
-padding-top: 30px;
+.title { /*header (h1)*/
+  padding-top: 43px;
+  font-size: 30px;
+  font-family: "Bree Serif", serif;
+}
+
+h1 {
+  margin: 0;
+  padding: 5%;
+  font-family: "Bree Serif", serif;
 }
 
 .navi {
-float: right;
-padding-top: 30px;
-font-size: 20px;
+  float: right;
+  padding-top: 30px;
+  font-size: 20px;
+  font-family: "Bree Serif", serif;
 }
 /* nav hamburger styling */
 
 a:active,
 a:hover {
-outline: 0;
+  outline: 0;
 }
 
 .menu-item:hover {
-text-decoration: underline;
-text-decoration-color: black;
+  text-decoration: underline;
+  text-decoration-color: black
 }
 
 @font-face {
-font-family: "responsivenav";
-src: url("../icons/responsivenav.eot");
-src: url("../icons/responsivenav.eot?#iefix") format("embedded-opentype"),
-  url("../icons/responsivenav.ttf") format("truetype"),
-  url("../icons/responsivenav.woff") format("woff"),
-  url("../icons/responsivenav.svg#responsivenav") format("svg");
-font-weight: normal;
-font-style: normal;
+  font-family: "responsivenav";
+  src: url("../icons/responsivenav.eot");
+  src: url("../icons/responsivenav.eot?#iefix") format("embedded-opentype"),
+    url("../icons/responsivenav.ttf") format("truetype"),
+    url("../icons/responsivenav.woff") format("woff"),
+    url("../icons/responsivenav.svg#responsivenav") format("svg");
+  font-weight: normal;
+  font-style: normal;
 }
 
 .nav-toggle {
-text-decoration: none;
-text-indent: -300px;
-position: relative;
-overflow: hidden;
-width: 60px;
-height: 55px;
-float: right;
+  text-decoration: none;
+  text-indent: -300px;
+  position: relative;
+  overflow: hidden;
+  width: 60px;
+  height: 55px;
+  float: right;
 }
 
 .nav-toggle:before {
@@ -71,97 +79,62 @@ float: right;
 }
 
 .nav-collapse ul {
-margin: 0;
-padding: 0;
-display: flex;
-list-style: none;
-flex-direction: column;
-align-items: flex-end;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  flex-direction: column;
+  align-items: flex-end;
 }
 
 .nav-collapse li {
-display: block;
+  display: block;
 }
 
 .js .nav-collapse {
-max-height: 0;
-position: absolute;
-display: block;
-overflow: hidden;
+  max-height: 0;
+  position: absolute;
+  display: block;
+  overflow: hidden;
 }
 
 .nav-collapse.opened {
-max-height: 9999px;
+  max-height: 9999px;
 }
 .nav-collapse,
 .nav-collapse * {
-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .nav-collapse,
 .nav-collapse ul {
-list-style: none;
-width: 100%;
-display: flex;
-justify-content: end;
+  list-style: none;
+  width: 100%;
+  display: flex;
+  justify-content: end;
 }
 
 .nav-collapse a {
-text-decoration: none;
-padding: 0.7em 1em;
-color: black;
-width: 100%;
-display: block;
+  text-decoration: none;
+  padding: 0.7em 1em;
+  color: black;
+  width: 100%;
+  display: block;
 }
 
 .nav-collapse ul ul a {
-padding-left: 2em;
-}
-
-@media screen and (min-width: 850px) {
-.nav-collapse ul {
-flex-direction: row;
-align-items: flex-end;
-font-size: 20px;
-gap: .5px;
-}
-
-.nav-collapse li {
-  width: auto;
-}
-
-.nav-collapse a {
-  padding: 1.02em 2em;
-  text-align: center;
-  border-top: 0;
-  margin: 0;
-}
-
-.nav-collapse ul ul a {
-  display: none;
-}
-
-.nav-collapse.closed {
-  max-height: none;
-}
-.nav-toggle {
-  display: none;
-}
+  padding-left: 2em;
 }
 
 /* footer styling */
-footer {
-display: flex;
-justify-content: center;
-background-color: #4B9CD3;
-color: black;
-font: 16px;
- position:relative;
-  bottom: 0;
-  width: 100%;
-  height: 100px;
-  text-align: center;
-  margin-top: 150px;
+footer{
+  background-color: #4B9CD3;
+  display: flex;
+  justify-content: center;
+  .footer-text{
+    text-align: center;
+    font-family: "Nanum Gothic Coding", monospace;
+  }
 }
 
 /* sample plan divs styling */
@@ -172,6 +145,7 @@ margin-right: 20px;
 border-radius: 10px;
 box-shadow: 1 3px 10px rgba(152, 201, 215, 0.887);
 padding-block: 20px;
+font-family: "Nanum Gothic Coding", monospace;
 
 }
 
@@ -182,6 +156,7 @@ margin-right: 20px;
 border-radius: 10px;
 box-shadow: 1 3px 10px rgba(152, 201, 215, 0.887);
 padding-block: 20px;
+font-family: "Nanum Gothic Coding", monospace;
 }
 
 .three {
@@ -191,6 +166,7 @@ margin-right: 20px;
 border-radius: 10px;
 box-shadow: 1 3px 10px rgba(152, 201, 215, 0.887);
 padding-block: 20px;
+font-family: "Nanum Gothic Coding", monospace;
 }
 
 .four {
@@ -200,6 +176,7 @@ margin-right: 20px;
 border-radius: 10px;
 box-shadow: 1 3px 10px rgba(152, 201, 215, 0.887);
 padding-block: 20px;
+font-family: "Nanum Gothic Coding", monospace;
 }
 
 .plans {
@@ -216,7 +193,7 @@ padding: 15px; /* Adds padding */
 }
 
 /* Optional: Centering the content horizontally and vertically within each box */
-.plans > div > h1,
+.plans > div > h2,
 .plans > div > ul {
 margin: 1;
 text-align: center;
@@ -234,19 +211,65 @@ margin-bottom: 5px;
 
 
 /* styling the title in each div */
-h1 {
-text-decoration: underline;
-background-color: white; /* Add white background to h1 */
+h2 {
+/* text-decoration: underline; */
+background-color: #7551C0; /* Add white background to h2 */
+border-radius: 2px;
 padding: 5px 10px;
 color: #69DC95;
 }
 
+
 @media screen and (min-width: 850px) {
-.plans {
-  display: flex;
-  flex-direction: row;
+  .title {
+    padding: 2%;
+    font-size: 24px;
+    margin-top: 20px;
+    font-family: "Bree Serif", serif;
   
-}
+  }
+
+  .nav-collapse ul {
+      flex-direction: row;
+      align-items: flex-end;
+      font-size: 18px;
+      justify-content: space-evenly;
+  }
+      
+  .nav-collapse li {
+      width: auto;
+  }
+
+  .nav-collapse a {
+      padding: 1.02em 1em;
+      text-align: center;
+      border-top: 0;
+      margin: 0;
+  }
+
+  .nav-collapse ul ul a {
+      display: none;
+  }
+
+  .nav-collapse.closed {
+      max-height: none;
+  }
+  .nav-toggle {
+      display: none;
+  }
+
+  .plans {
+    display: flex;
+    flex-direction: row;
+    margin-top: 90px;
+    
+  }
+
+  footer{
+    margin-top: 90px;
+  }
+
+
 }
 
 html, body{
