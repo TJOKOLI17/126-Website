@@ -179,7 +179,7 @@ body{
     align-items: center;
     width: 300px;
     max-width: 600px;
-    animation: spin 0.7s linear forwards;
+    animation: spin 0.7s ease forwards;
   }
   
   .logo-img{
@@ -190,7 +190,7 @@ body{
     from{
       transform: rotateY(0deg);
     }to{
-      transform: rotateY(360deg);
+      transform: rotateY(720deg);
     }
   }
   
